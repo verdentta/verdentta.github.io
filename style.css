@@ -315,7 +315,7 @@ a:focus-visible {
   overflow: hidden;
   aspect-ratio: 0.82;
   border: 1px solid rgba(181, 243, 107, 0.28);
-  border-radius: 180px 180px 18px 18px;
+  border-radius: 22px;
   background: linear-gradient(145deg, #203746, #101c27);
   box-shadow: 0 22px 80px rgba(0, 0, 0, 0.28);
   animation: floatImage 6s ease-in-out infinite, glowPulse 5s ease-in-out infinite;
@@ -714,7 +714,7 @@ a:focus-visible {
 
   .portrait-frame {
     aspect-ratio: 0.92;
-    border-radius: 150px 150px 16px 16px;
+    border-radius: 18px;
   }
 
   .focus-grid {
