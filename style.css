@@ -202,6 +202,43 @@ a:focus-visible {
   line-height: 1.8;
 }
 
+.hero-role {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 0.3em;
+  margin: 13px 0 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.typed-animation {
+  display: inline-flex;
+  align-items: baseline;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 3px;
+  transform: translateY(0.12em);
+  background: var(--accent);
+  animation: cursorBlink 0.9s steps(2, start) infinite;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -281,6 +318,7 @@ a:focus-visible {
   border-radius: 180px 180px 18px 18px;
   background: linear-gradient(145deg, #203746, #101c27);
   box-shadow: 0 22px 80px rgba(0, 0, 0, 0.28);
+  animation: floatImage 6s ease-in-out infinite, glowPulse 5s ease-in-out infinite;
 }
 
 .portrait-frame::after {
@@ -559,6 +597,20 @@ a:focus-visible {
   color: var(--accent);
 }
 
+@keyframes floatImage {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-9px); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 22px 80px rgba(0, 0, 0, 0.28), 0 0 0 rgba(181, 243, 107, 0); }
+  50% { box-shadow: 0 25px 86px rgba(0, 0, 0, 0.34), 0 0 25px rgba(181, 243, 107, 0.12); }
+}
+
+@keyframes cursorBlink {
+  to { visibility: hidden; }
+}
+
 @media (max-width: 900px) {
   .hero {
     min-height: unset;
@@ -768,6 +820,7 @@ a:focus-visible {
   *,
   *::before,
   *::after {
+    animation: none !important;
     transition-duration: 0.01ms !important;
   }
 }
