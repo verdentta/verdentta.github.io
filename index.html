@@ -1,54 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romeo Paul - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09131d">
+  <meta name="description" content="Romeo Paul is a cloud monitoring engineer and computer science graduate building reliable systems and useful software.">
+  <meta property="og:title" content="Romeo Paul — Cloud & Software">
+  <meta property="og:description" content="Cloud monitoring, software projects, and a little about how I build.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://verdentta.github.io/">
+  <title>Romeo Paul — Cloud Monitoring Engineer &amp; Software Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <ul>
-        <p><font face="Arial" color="white" size="4" >Welcome to my Portfolio!</font></p>
-            <li><a href="https://github.com/verdentta" style="--i:3;">Projects/Github</a></li>
-            <li><a href="Resume_Romeo_Paul.pdf" style="--i:2;">Résumé/Contact Info</a></li>
-            <li><a href="https://www.linkedin.com/in/romeo-paul-645152166/" style="--i:1;">Linkedin</a></li>
-            
-    </ul>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-        <section class="intro">
-            <div class="intro-content">
-                <h3>Hello! My name is </h3>
-                <h1>Romeo Paul </h1>
-                <h3 id="job-title">   And I am a <span class="multiple-text"></span> </h3>
-                <p class="about-me">I'm a Computer Science '23 graduate from Toronto Metropolitan University(formerly known as Ryerson)
-                    right in the heart of downtown Toronto. I am currently seeking full time employment or any internship/fellowship opportunities.
-                </p>
-                <h4>Some projects I've completed so far: </h4>
+  <header class="site-header shell">
+    <a class="brand" href="#top" aria-label="Romeo Paul, home">
+      <span class="brand-mark" aria-hidden="true">RP</span>
+      <span>Romeo Paul</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a class="nav-contact" href="https://www.linkedin.com/in/romeo-paul-645152166/" target="_blank" rel="noopener">Get in touch <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
 
-                <ul id="list">
-                        
-                    <li>&#x2022; Full-Stack Clothing Shop commercial website using HTML, CSS, JS, AngularJS for SPA, PHP, MySQL via XAMPP</li>
-                    <li>&#x2022; Dijkstra & Bellman Ford Algorithm Illustration for Educational Use built via HTML, CSS, JS.</li>
-                    <li>&#x2022; Android Platform Jumper Game built via Unity and C#</li>
-                    <li>&#x2022; Picture Puzzle Creator Software that takes any image and makes it into a Puzzle to solve via Java and JavaFX</li>
-                    <li>&#x2022; Website Portfolio built via HTML, CSS, JS and hosted via Github</li>
-                    <li>&#x2022; Basic Drawing tool by using shapes to draw created via Java</li>
-                </ul>
-                <p> All source code is available on Github.</p>
-                
-                
-                
-            </div>
+  <main id="main">
+    <section class="hero shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Cloud monitoring engineer <span class="eyebrow-divider">·</span> software developer</p>
+        <h1 id="hero-title">I build reliable systems <span>and thoughtful software.</span></h1>
+        <p class="hero-description">I’m Romeo, a Computer Science graduate working in cloud monitoring and reliability. I enjoy investigating tricky problems and turning good ideas into useful, well-built applications.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my projects <span aria-hidden="true">↓</span></a>
+          <a class="button button-quiet" href="Resume_Romeo_Paul.pdf" target="_blank" rel="noopener">View résumé <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta" aria-label="Based in Mississauga, Ontario">
+          <span class="meta-line" aria-hidden="true"></span>
+          <span>Based in Mississauga, Ontario</span>
+          <span class="meta-separator" aria-hidden="true">/</span>
+          <span>Building across cloud and code</span>
+        </div>
+      </div>
 
-            <div class="profile-picture">
-                <img src="Portfolio Picture.jpg" alt="">
-            </div>
-            
-        </section>
-      
-    
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <script src="script.js"></script>
-</body >
+      <figure class="portrait-card">
+        <div class="portrait-frame">
+          <img src="Portfolio%20Picture.jpg" alt="Portrait of Romeo Paul" fetchpriority="high">
+          <span class="portrait-index" aria-hidden="true">01 / PROFILE</span>
+        </div>
+        <figcaption><span class="caption-mark" aria-hidden="true">✳</span> Curious by nature. Practical by design.</figcaption>
+      </figure>
+    </section>
+
+    <section class="focus-band" aria-label="Areas of focus">
+      <div class="shell focus-grid">
+        <div class="focus-intro">
+          <span class="section-kicker">WHAT I DO</span>
+          <p>A mix of production thinking and hands-on building.</p>
+        </div>
+        <article class="focus-item">
+          <span class="focus-number">01</span>
+          <h2>Cloud reliability</h2>
+          <p>Monitoring, alert investigation, and clear incident handoffs.</p>
+        </article>
+        <article class="focus-item">
+          <span class="focus-number">02</span>
+          <h2>Full-stack projects</h2>
+          <p>Web apps, APIs, and experiences built from idea to working product.</p>
+        </article>
+        <article class="focus-item">
+          <span class="focus-number">03</span>
+          <h2>Problem solving</h2>
+          <p>Breaking complex problems into understandable, useful solutions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects-section shell" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">SELECTED WORK</span>
+          <h2 id="projects-title">Things I’ve built<span class="accent">.</span></h2>
+        </div>
+        <a class="text-link" href="https://github.com/verdentta" target="_blank" rel="noopener">More on GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-card-featured">
+          <div class="project-topline"><span>01</span><span class="project-type">REAL-TIME WEB APP</span></div>
+          <h3>Spell Duel</h3>
+          <p>A multiplayer spelling game where friends create a lobby, choose the challenge, and compete in timed rounds. Built with real-time rooms, custom word lists, and animated avatars.</p>
+          <ul class="tag-list" aria-label="Technologies used">
+            <li>React</li><li>Node.js</li><li>Express</li><li>Socket.IO</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/verdentta/spell-duel" target="_blank" rel="noopener">View source <span aria-hidden="true">↗</span></a>
+            <a href="https://www.youtube.com/watch?v=rB9vLTd4T5c" target="_blank" rel="noopener">Watch demo <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline"><span>02</span><span class="project-type">ALGORITHM VISUALIZATION</span></div>
+          <h3>Dijkstra vs. Bellman–Ford</h3>
+          <p>An interactive graph-routing project that lets you explore two shortest-path algorithms and compare how they find routes through weighted graphs.</p>
+          <ul class="tag-list" aria-label="Technologies used">
+            <li>React</li><li>TypeScript</li><li>Graph algorithms</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/verdentta/NetworkRouting-Project" target="_blank" rel="noopener">View source <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline"><span>03</span><span class="project-type">FULL-STACK PLATFORM</span></div>
+          <h3>Content Sharing Website</h3>
+          <p>A full-stack platform for sharing video and short-form content, with user accounts, forums, media processing, and administration tools.</p>
+          <ul class="tag-list" aria-label="Technologies used">
+            <li>ASP.NET Core</li><li>SQL Server</li><li>Identity</li><li>FFmpeg</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/verdentta/Content-Sharing-Website-Full-stack-" target="_blank" rel="noopener">View source <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="shell about-grid">
+        <div>
+          <span class="section-kicker">A LITTLE ABOUT ME</span>
+          <h2 id="about-title">Curiosity keeps me learning.<br><span class="muted-heading">Good engineering keeps me grounded.</span></h2>
+        </div>
+        <div class="about-copy">
+          <p>I studied Computer Science at Toronto Metropolitan University and now work in cloud monitoring. That combination shapes how I approach technology: understand what’s happening, communicate clearly, and build things that work for people.</p>
+          <p>When I’m not working through an alert or a code problem, I’m usually exploring a new idea through a side project.</p>
+          <div class="about-links">
+            <a href="https://github.com/verdentta" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/romeo-paul-645152166/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">RP</span><span>Romeo Paul</span></a>
+    <p>Made with care <span aria-hidden="true">·</span> <span data-year>2026</span></p>
+    <a class="back-top" href="#top">Back to top ↑</a>
+  </footer>
+</body>
 </html>

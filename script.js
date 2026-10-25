@@ -1,9 +1,5 @@
-var typed = new Typed(".multiple-text", 
-{
-    strings: ["Programmer", "Web Developer", "Tech Enthusiast"],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-})
+const year = document.querySelector("[data-year]");
 
+if (year) {
+  year.textContent = String(new Date().getFullYear());
+}
